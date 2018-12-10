@@ -1,20 +1,24 @@
 import path from 'path';
 
-const config = {
+export default {
 	entry: {
 		default: './js/default.js',
 		other: './js/other.js'
 	},
-	devtool: 'cheap-module-eval-source-map',
-	mode: 'development',
+	mode: 'production',
+	module: {
+		rules: [
+			{
+				test: /\.m?js$/,
+				exclude: /(node_modules)/,
+				use: {
+					loader: 'babel-loader'
+				}
+			}
+		]
+	},
 	output: {
 		filename: '[name].js',
-		path: path.resolve(__dirname, 'src/assets/js'),
+		path: path.resolve(__dirname, 'web/assets/js'),
 	},
-	watch: true,
-	watchOptions: {
-		ignored: /node_modules/
-	},
-};
-
-export default config;
+}
