@@ -1,1 +1,1 @@
-I'm the other page!
+<p>I'm the other page!</p>
