@@ -1,5 +1,5 @@
-import './common';
+import * as React from 'react';
+import run from './common';
+import HomePage from './components/HomePage';
 
-const myObject = { a: 1, b: 2};
-const anotherObject = { ...myObject, c: 3};
-console.log(anotherObject);
+run(({ urls }) => <HomePage urls={urls} />);

@@ -2,8 +2,9 @@ import path from 'path';
 
 export default {
 	entry: {
+		classComponent: './js/classComponent.js',
 		default: './js/default.js',
-		other: './js/other.js'
+		functionComponent: './js/functionComponent.js',
 	},
 	mode: 'production',
 	module: {

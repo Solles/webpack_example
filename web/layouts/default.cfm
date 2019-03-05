@@ -5,7 +5,11 @@
 		<title>Webpack Example Application</title>
 	</head>
 	<body>
-		<div style="border: 1px solid black">
+		<div
+			id="main"
+			style="border: 1px solid black"
+			data-context="#encodeForHTMLAttribute(serializeJSON(rc.jsContext ?: structNew()))#"
+		>
 			#body#
 		</div>
 		<cfif rc.keyExists('entryJSPath')>
