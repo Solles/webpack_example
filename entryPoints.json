@@ -1,0 +1,6 @@
+{
+	"classComponent": "./js/classComponent.js",
+	"default": "./js/default.js",
+	"functionComponent": "./js/functionComponent.js",
+	"reduxExample": "./js/redux_example/index.js"
+}

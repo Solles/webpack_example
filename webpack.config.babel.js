@@ -1,11 +1,8 @@
 import path from 'path';
+import entry from './entryPoints.json';
 
 export default {
-	entry: {
-		classComponent: './js/classComponent.js',
-		default: './js/default.js',
-		functionComponent: './js/functionComponent.js',
-	},
+	entry,
 	mode: 'production',
 	module: {
 		rules: [

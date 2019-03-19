@@ -18,6 +18,10 @@ component accessors=true {
 			{
 				text: 'Go to function component example',
 				url: framework.buildURL('main.functionComponent')
+			},
+			{
+				text: 'Go to Redux example',
+				url: framework.buildURL('main.reduxExample')
 			}
 		]);
 	}

@@ -2,10 +2,11 @@ component extends="framework.one" {
 	this.name = 'webpack_example';
 
 	function setUpView(rc) {
-		var entryJSPath = './assets/js/#getItem()#.js';
+		var entryPoints = deserializeJSON(fileRead('../entryPoints.json'));
+		var item = getItem();
 
-		if (fileExists(expandPath(entryJSPath))) {
-			rc.entryJSPath = entryJSPath;
+		if (entryPoints.keyExists(item)) {
+			rc.entryJSPath = './assets/js/#item#.js';
 		}
 	}
 }

@@ -1,0 +1,12 @@
+[
+	{  "cloud": "cumulus", "etage": "low" },
+	{  "cloud": "stratus", "etage": "low" },
+	{  "cloud": "stratocumulus", "etage": "low" },
+	{  "cloud": "altocumulus", "etage": "mid" },
+	{  "cloud": "altostratus", "etage": "mid" },
+	{  "cloud": "cirrocumulus", "etage": "high" },
+	{  "cloud": "cirrostratus", "etage": "high" },
+	{  "cloud": "cirrus", "etage": "high" },
+	{  "cloud": "nimbostratus", "etage": "multi" },
+	{  "cloud": "cumulonimbus", "etage": "multi" }
+]
