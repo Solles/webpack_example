@@ -10,8 +10,5 @@ export default connect(
 		favorite: getFavorite(state),
 		lastLike: getLastLike(state),
 	}),
-	dispatch => ({
-		onLike: (id) => dispatch(likeCloud(id)),
-		onFavorite: (id) => dispatch(selectFavorite(id)),
-	})
+	{ onLike: likeCloud, onFavorite: selectFavorite },
 )(Example);
